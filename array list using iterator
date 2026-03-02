@@ -1,0 +1,23 @@
+package com.mycompany.booklist; 
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class BookList 
+{
+public static void main(String[] args)
+    { 
+        ArrayList<String> books = new ArrayList<>(); 
+        
+        books.add("The Bible");
+        books.add("Harry Potter"); 
+        books.add("A Tale of Two Cities");
+        Iterator<String> iterator = books.iterator();
+        
+    System.out.println("List of Books:"); 
+    
+while(iterator.hasNext())
+    {
+        System.out.println(iterator.next());
+    }
+    }
+}
